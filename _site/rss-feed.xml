@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>AlgoAI.dev</title>
+		<description>Simplifying AI Concepts | Books | Projects |</description>
+		<link></link>
+		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Books:</title>
+				
+				
+					<description>&lt;hr /&gt;
+&lt;h1 id=&quot;the-100-page-ml-book&quot;&gt;The 100 page ML book&lt;/h1&gt;
+</description>
+				
+				<pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+				<link>http://localhost:4000/books</link>
+				<guid isPermaLink="true">http://localhost:4000/books</guid>
+			</item>
+		
+	</channel>
+</rss>
