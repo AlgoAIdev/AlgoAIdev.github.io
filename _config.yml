@@ -14,6 +14,8 @@ title:		           "AlgoAI.dev"
 description:	       "Simplifying AI Concepts | Books | Projects |"
 author:              "AlgoAi team"
 
+url: https://www.algoai.dev
+
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
