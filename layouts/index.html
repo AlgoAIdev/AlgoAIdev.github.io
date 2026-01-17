@@ -1,0 +1,83 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>AI Research & Engineering</h1>
+    <p class="tagline">We are a team of PhD researchers and engineers specializing in Natural Language Processing, Speech Analysis, and Social Intelligence. From understanding nuance in human communication to building production-grade AI systems, we transform complex language challenges into intelligent solutions.</p>
+    <div class="hero-cta">
+      <a href="/projects/" class="btn btn-primary">View Our Work</a>
+      <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>What We Do</h2>
+      <p>We combine academic rigor with industry experience to deliver AI solutions that understand human language</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon research">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        </div>
+        <h3>NLP Research</h3>
+        <p>Advanced research in natural language processing, including hedge detection, uncertainty quantification, and information extraction from text and speech.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon ai">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path><path d="M17 10h.01"></path><path d="M7 10h.01"></path><path d="M12 14v8"></path><path d="M8 18h8"></path><circle cx="12" cy="10" r="6"></circle></svg>
+        </div>
+        <h3>Conversational AI</h3>
+        <p>Building intelligent conversational systems that understand context, handle domain-specific terminology, and deliver accurate, helpful responses.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon development">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </div>
+        <h3>Speech & Audio</h3>
+        <p>Multimodal systems that combine speech recognition with metadata analysis for tasks like speaker profiling, age detection, and acoustic feature extraction.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon consulting">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        </div>
+        <h3>Social Intelligence</h3>
+        <p>Understanding influence dynamics, power relations in communication, and social signals to build AI that navigates human interaction naturally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Project -->
+<section class="section" style="background-color: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Project</h2>
+      <p>See what we're building</p>
+    </div>
+    <div class="card-grid" style="max-width: 600px; margin: 0 auto;">
+      <div class="card project-card">
+        <div class="project-image" style="background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent-light));">
+          <span style="font-size: 3rem; color: var(--text-inverse); font-weight: 700;">Tactika</span>
+        </div>
+        <span class="project-status">Active</span>
+        <h3>Tactika.ai</h3>
+        <p>AI-powered project management that transforms how teams plan, collaborate, and deliver. Leveraging intelligent automation to streamline workflows and boost productivity.</p>
+        <a href="https://tactika.ai" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: 1rem;">Visit Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section">
+  <div class="container text-center">
+    <h2>Ready to Transform Your Ideas?</h2>
+    <p style="max-width: 600px; margin: 0 auto 2rem;">Whether you're looking to integrate NLP into your products, build conversational AI, or need expertise in speech and language understanding, we're here to help.</p>
+    <a href="/contact/" class="btn btn-primary">Start a Conversation</a>
+  </div>
+</section>
+{{ end }}

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-04T23:34:44-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">AlgoAI.dev</title><subtitle>Simplifying AI Concepts | Books | Projects |</subtitle><author><name>AlgoAi team</name></author><entry><title type="html">Books:</title><link href="http://localhost:4000/books" rel="alternate" type="text/html" title="Books:" /><published>2024-01-01T00:00:00-05:00</published><updated>2024-01-01T00:00:00-05:00</updated><id>http://localhost:4000/books</id><content type="html" xml:base="http://localhost:4000/books"><![CDATA[<hr />
-<h1 id="the-100-page-ml-book">The 100 page ML book</h1>
-
-<p><a href="https://amzn.to/3SlTPqe"><img src="assets/img/books/100_page_post.png" alt="invisible description of images, read aloud to blind users
-" title="The 100-page ML book" />
-</a></p>
-
-<hr />]]></content><author><name>AlgoAi team</name></author><category term="documentation" /><category term="sample" /><summary type="html"><![CDATA[The 100 page ML book]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/books/main_books.jpg" /><media:content medium="image" url="http://localhost:4000/books/main_books.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

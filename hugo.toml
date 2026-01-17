@@ -1,0 +1,41 @@
+baseURL = "https://www.algoai.dev/"
+languageCode = "en-us"
+title = "AlgoAI - AI Research & Development"
+
+[params]
+  description = "NYC-based AI research and engineering company specializing in Natural Language Processing, Speech Analysis, and Conversational AI. PhD expertise in NLP, Social Intelligence, and Multimodal Machine Learning."
+  author = "AlgoAI"
+  email = "admin@algoai.dev"
+  location = "New York City"
+  tagline = "Research-Driven AI Engineering"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 3
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]

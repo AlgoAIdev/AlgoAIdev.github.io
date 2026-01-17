@@ -1,0 +1,37 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <span class="logo-text">Algo<span class="logo-accent">AI</span></span>
+      <p>{{ .Site.Params.tagline }}</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/#research">AI Research</a></li>
+          <li><a href="/services/#development">Development</a></li>
+          <li><a href="/services/#consulting">Consulting</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+          <li>{{ .Site.Params.location }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; {{ now.Year }} AlgoAI. All rights reserved.</p>
+  </div>
+</footer>
