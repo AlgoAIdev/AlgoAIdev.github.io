@@ -2,12 +2,16 @@ baseURL = "https://www.algoai.dev/"
 languageCode = "en-us"
 title = "AlgoAI - AI Research & Development"
 
+[services]
+  [services.googleAnalytics]
+    id = "G-R4N0WVDQXE"
+
 [params]
   description = "NYC-based AI research and engineering company specializing in Natural Language Processing, Speech Analysis, and Conversational AI. PhD expertise in NLP, Social Intelligence, and Multimodal Machine Learning."
   author = "AlgoAI"
   email = "admin@algoai.dev"
   location = "New York City"
-  tagline = "Research-Driven AI Engineering"
+  tagline = "Turning AI Concepts Into Reality"
 
 [menu]
   [[menu.main]]

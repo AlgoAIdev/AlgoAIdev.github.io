@@ -1,91 +1,231 @@
 {{ define "main" }}
-<!-- Hero Section -->
+<!-- Hero Section with Animated Particle Ring -->
 <section class="hero">
+  <div class="hero-particles">
+    <canvas id="particle-ring"></canvas>
+  </div>
   <div class="hero-content">
-    <h1>AI Research & Engineering</h1>
-    <p class="tagline">We are a team of PhD researchers and engineers specializing in Natural Language Processing, Speech Analysis, and Social Intelligence. From understanding nuance in human communication to building production-grade AI systems, we transform complex language challenges into intelligent solutions.</p>
+    <h1 class="hero-logo">algoai.dev</h1>
+    <p class="tagline">Turning AI Concepts Into Reality</p>
+    <p>NYC-based AI research and consulting. We specialize in NLP, Conversational AI, and Speech Processing.</p>
     <div class="hero-cta">
-      <a href="/projects/" class="btn btn-primary">View Our Work</a>
+      <a href="/services/" class="btn btn-primary">Our Services</a>
       <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
     </div>
   </div>
 </section>
 
 <!-- Services Overview -->
-<section class="section services-section">
-  <div class="container margin-top-lg">
+<section class="section">
+  <div class="container">
     <div class="section-header">
-      <h2 class="section-title">What We Do</h2>
-      <p class="section-subtitle">We combine academic rigor with industry experience to deliver AI solutions that understand human language</p>
+      <span class="tagline">What We Do</span>
+      <h2>Research-Driven AI Engineering</h2>
+      <p>From fundamental research to production systems, we build AI that understands language.</p>
     </div>
-    <div class="services-grid">
-      <div class="card service-card">
-        <div class="card-icon-wrapper research">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+    <div class="services-home-grid">
+      <div class="service-card animate-on-scroll">
+        <div class="card-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
         </div>
-        <div class="card-content">
-          <h3>NLP Research</h3>
-          <p>Advanced research in natural language processing, including hedge detection, uncertainty quantification, and information extraction from text and speech.</p>
-        </div>
+        <h3>NLP Research</h3>
+        <p>Hedge detection, information extraction, and understanding the subtle signals in how people express certainty and doubt.</p>
       </div>
-      <div class="card service-card">
-        <div class="card-icon-wrapper ai">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path><path d="M17 10h.01"></path><path d="M7 10h.01"></path><path d="M12 14v8"></path><path d="M8 18h8"></path><circle cx="12" cy="10" r="6"></circle></svg>
+      <div class="service-card animate-on-scroll stagger-1">
+        <div class="card-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
         </div>
-        <div class="card-content">
-          <h3>Conversational AI</h3>
-          <p>Building intelligent conversational systems that understand context, handle domain-specific terminology, and deliver accurate, helpful responses.</p>
-        </div>
+        <h3>Conversational AI</h3>
+        <p>Domain-specific chatbots and virtual assistants that handle complex interactions in regulated industries.</p>
       </div>
-      <div class="card service-card">
-        <div class="card-icon-wrapper development">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+      <div class="service-card animate-on-scroll stagger-2">
+        <div class="card-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
         </div>
-        <div class="card-content">
-          <h3>Speech & Audio</h3>
-          <p>Multimodal systems that combine speech recognition with metadata analysis for tasks like speaker profiling, age detection, and acoustic feature extraction.</p>
-        </div>
+        <h3>Speech & Multimodal</h3>
+        <p>Combining acoustic features with text and metadata for speaker analysis and multimodal classification.</p>
       </div>
-      <div class="card service-card">
-        <div class="card-icon-wrapper consulting">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      <div class="service-card animate-on-scroll stagger-3">
+        <div class="card-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
         </div>
-        <div class="card-content">
-          <h3>Social Intelligence</h3>
-          <p>Understanding influence dynamics, power relations in communication, and social signals to build AI that navigates human interaction naturally.</p>
-        </div>
+        <h3>Social Intelligence</h3>
+        <p>Influence prediction, network analysis, and understanding how ideas propagate through communities.</p>
       </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/services/" class="btn btn-ghost">View All Services &rarr;</a>
     </div>
   </div>
 </section>
 
-<!-- Featured Project -->
-<section class="section" style="background-color: var(--bg-secondary);">
+<!-- Featured Projects -->
+<section class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <h2>Featured Project</h2>
-      <p>See what we're building</p>
+      <span class="tagline">Featured</span>
+      <h2>Our Work</h2>
+      <p>From research publications to production systems</p>
     </div>
-    <div class="card-grid" style="max-width: 600px; margin: 0 auto;">
-      <div class="card project-card">
-        <div class="project-image" style="background: linear-gradient(135deg, var(--color-primary-light), var(--color-accent-light));">
-          <span style="font-size: 3rem; color: var(--text-inverse); font-weight: 700;">Tactika</span>
+    <div class="card-grid">
+      <div class="project-card animate-on-scroll">
+        <div class="project-image">
+          <span>Tactika</span>
         </div>
-        <span class="project-status">Active</span>
-        <h3>Tactika.ai</h3>
-        <p>AI-powered project management that transforms how teams plan, collaborate, and deliver. Leveraging intelligent automation to streamline workflows and boost productivity.</p>
-        <a href="https://tactika.ai" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: 1rem;">Visit Project</a>
+        <div class="project-card-content">
+          <span class="project-status">Active</span>
+          <h3>Tactika.ai</h3>
+          <p>AI-powered project management that transforms how teams plan, collaborate, and deliver through intelligent automation.</p>
+          <div class="project-tags">
+            <span class="project-tag">AI Task Prioritization</span>
+            <span class="project-tag">Smart Scheduling</span>
+            <span class="project-tag">Team Analytics</span>
+          </div>
+        </div>
       </div>
+      <div class="project-card animate-on-scroll stagger-1">
+        <div class="project-image">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        </div>
+        <div class="project-card-content">
+          <span class="project-status">Research</span>
+          <h3>Uncertainty in Language</h3>
+          <p>Research on detecting hedging and uncertainty in text, critical in medicine, finance, and engineering.</p>
+          <div class="project-tags">
+            <span class="project-tag">Hedge Detection</span>
+            <span class="project-tag">POS Tagging</span>
+            <span class="project-tag">Joint Models</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card animate-on-scroll stagger-2">
+        <div class="project-image">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <div class="project-card-content">
+          <span class="project-status">Industry</span>
+          <h3>Enterprise Conversational AI</h3>
+          <p>Production-grade conversational AI systems for regulated industries with enterprise compliance.</p>
+          <div class="project-tags">
+            <span class="project-tag">Banking LLMs</span>
+            <span class="project-tag">Domain Expertise</span>
+            <span class="project-tag">Compliance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/projects/" class="btn btn-ghost">View All Projects &rarr;</a>
     </div>
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="section">
-  <div class="container text-center">
-    <h2>Ready to Transform Your Ideas?</h2>
-    <p style="max-width: 600px; margin: 0 auto 2rem;">Whether you're looking to integrate NLP into your products, build conversational AI, or need expertise in speech and language understanding, we're here to help.</p>
+<section class="section cta-section text-center">
+  <div class="container">
+    <h2>Ready to Build Something Remarkable?</h2>
+    <p>Whether you need research expertise, production engineering, or both, we'd like to hear about your challenge.</p>
     <a href="/contact/" class="btn btn-primary">Start a Conversation</a>
   </div>
 </section>
+
+<!-- Particle Ring Animation Script -->
+<script>
+(function() {
+  const canvas = document.getElementById('particle-ring');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  let animationId;
+
+  // Resize canvas
+  function resize() {
+    const container = canvas.parentElement;
+    const size = Math.min(container.offsetWidth, container.offsetHeight, 800);
+    canvas.width = size;
+    canvas.height = size;
+    initParticles();
+  }
+
+  // Create particles arranged in concentric rings
+  function initParticles() {
+    particles = [];
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const baseRadius = Math.min(canvas.width, canvas.height) * 0.35;
+
+    // Multiple rings with different properties
+    const rings = [
+      { radius: baseRadius * 0.85, count: 120, size: 2, speed: 0.0003, opacity: 0.8 },
+      { radius: baseRadius * 0.92, count: 90, size: 2.5, speed: -0.0004, opacity: 0.6 },
+      { radius: baseRadius * 1.0, count: 150, size: 1.8, speed: 0.0002, opacity: 0.9 },
+      { radius: baseRadius * 1.08, count: 100, size: 2.2, speed: -0.00025, opacity: 0.5 },
+      { radius: baseRadius * 1.15, count: 80, size: 1.5, speed: 0.00035, opacity: 0.4 }
+    ];
+
+    rings.forEach(ring => {
+      for (let i = 0; i < ring.count; i++) {
+        const angle = (i / ring.count) * Math.PI * 2;
+        // Add some randomness to the radius
+        const radiusOffset = (Math.random() - 0.5) * 15;
+        const particleRadius = ring.radius + radiusOffset;
+
+        particles.push({
+          baseAngle: angle,
+          angle: angle,
+          radius: particleRadius,
+          size: ring.size + Math.random() * 1,
+          speed: ring.speed * (0.8 + Math.random() * 0.4),
+          opacity: ring.opacity * (0.6 + Math.random() * 0.4),
+          pulseOffset: Math.random() * Math.PI * 2
+        });
+      }
+    });
+  }
+
+  // Gold color with variable opacity
+  function getGoldColor(opacity) {
+    return `rgba(201, 169, 98, ${opacity})`;
+  }
+
+  // Animate particles
+  function animate(timestamp) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+
+    particles.forEach(particle => {
+      // Update angle
+      particle.angle += particle.speed;
+
+      // Pulse effect
+      const pulse = Math.sin(timestamp * 0.001 + particle.pulseOffset) * 0.15 + 0.85;
+
+      // Calculate position
+      const x = centerX + Math.cos(particle.angle) * particle.radius;
+      const y = centerY + Math.sin(particle.angle) * particle.radius;
+
+      // Draw particle
+      ctx.beginPath();
+      ctx.arc(x, y, particle.size * pulse, 0, Math.PI * 2);
+      ctx.fillStyle = getGoldColor(particle.opacity * pulse);
+      ctx.fill();
+    });
+
+    animationId = requestAnimationFrame(animate);
+  }
+
+  // Initialize
+  resize();
+  window.addEventListener('resize', resize);
+  animate(0);
+
+  // Cleanup on page unload
+  window.addEventListener('beforeunload', () => {
+    cancelAnimationFrame(animationId);
+  });
+})();
+</script>
 {{ end }}
